@@ -2,6 +2,8 @@ public class Chess extends Game {
 
     @Override
     protected void initializeGame() {
+        System.out.println("Chess started!");
+        System.out.println("Enjoy your game)");
         // chess specific initialization actions
     }
 

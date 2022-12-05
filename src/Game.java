@@ -21,5 +21,4 @@ public abstract class Game {
     public void setPlayersAmount(int playersAmount){
         this.playersAmount = playersAmount;
     }
-
 }

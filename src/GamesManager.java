@@ -1,18 +1,27 @@
+import java.io.*;
+import java.text.*;
+import java.util.Scanner;
+
 public class GamesManager {
 
-    public static void main (String [] args){
-        final GameCode gameCode = GameCode.CHESS;
+    public static void main (String [] args) throws  Exception{
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter name of Game");
+        System.out.println("Chess = 1");
+        System.out.println("Monopoly = 2");
+        System.out.println("Tic Tac Toe = 3");
+        String Game_Mode = in.next();
 
         Game game;
-
-        switch (gameCode){
-            case CHESS :
+S
+        switch (Game_Mode){
+            case "1" :
                 game = new Chess();
                 break;
-            case MONOPOLY :
+            case "2" :
                 game = new Monopoly();
                 break;
-            case TIC_TAC_TOE:
+            case "3":
                 game = new Tic_Tac_Toe();
                 break;
             default :
