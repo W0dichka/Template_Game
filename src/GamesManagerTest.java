@@ -4,15 +4,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GamesManagerTest {
     @Test
-    public void TestMonopoly() {
-        assertEquals("Monopoly started!", "Monopoly started!");
+    public void TestMonopoly(){
+        Game game;
+        game = new Monopoly();
+        assertEquals("Monopoly", game.initializeGame());
     }
     @Test
     public void TestChess() {
-        assertEquals("Chess started!", "Chess started!");
+        Game game;
+        game = new Chess();
+        assertEquals("Chess", game.initializeGame());
     }
     @Test
     public void TestTic() {
-        assertEquals("Tic Tac Toe started!", "Tic Tac Toe started!");
+        Game game;
+        game = new Tic_Tac_Toe();
+        assertEquals("Tic_Tac_Toe", game.initializeGame());
     }
 }

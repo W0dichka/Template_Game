@@ -2,7 +2,7 @@ public abstract class Game {
 
     private int playersAmount;
 
-    protected abstract void initializeGame();
+    protected abstract String initializeGame();
 
     protected abstract void playGame();
 

@@ -13,7 +13,7 @@ public class GamesManager {
         String Game_Mode = in.next();
 
         Game game;
-S
+
         switch (Game_Mode){
             case "1" :
                 game = new Chess();

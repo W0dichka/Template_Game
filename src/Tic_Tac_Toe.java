@@ -1,9 +1,11 @@
 public class Tic_Tac_Toe extends Game {
         @Override
-        protected void initializeGame(){
+        protected String initializeGame(){
+                String res = "Tic_Tac_Toe";
                 System.out.println("Tic Tac Toe started!");
                 System.out.println("Enjoy your game)");
             // tic_tac_toe specific initialization actions
+                return res;
         }
 
         @Override
